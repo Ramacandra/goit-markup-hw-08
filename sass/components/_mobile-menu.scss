@@ -1,0 +1,151 @@
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu__container {
+    display: none;
+  }
+
+  @media (min-width: 768px) and (max-width:1100px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: $secondary-color;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $primary-color;
+  }
+  
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }}
+
+    .mobile-menu__contacts {
+        display: block;
+        margin-top: 200px;
+      }
+      .mobile-menu__contacts-link{
+        display: block;
+        text-decoration: none;
+        color: $accent-color;
+        padding-bottom: 32px;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+      }
+      .mobile-menu__contacts-link--email{
+        display: block;
+        text-decoration: none;
+        color: $text-color;
+        padding-bottom: 64px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+      }
+      .mobile-menu__networks{
+        display: flex;
+        gap:10px;
+        
+      }
+      .mobile-menu__networks-link {
+        text-decoration: none;
+        color: $accent-color;
+      }
+      .line::before {
+        content: "";
+        width: 0;
+        height: 22px;
+        border: 1px solid $icon-color;
+        margin-right: 10px;
+      }
+
+
+  @media (max-width: 767px) {
+    .mobile-menu__container {
+        display: flex;
+        position: relative;
+      }
+  
+      .menu-toggle {
+          display: flex;
+          position: absolute;
+          top: -50px;
+          right: 15px;
+      }
+
+      .mobile-menu {
+        display: block;
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        color: $primary-color;
+    
+      }
+  }
+  
+  .menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        fill: $accent-color;
+    }
+  }
+  
+  
