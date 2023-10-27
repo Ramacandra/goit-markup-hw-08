@@ -164,12 +164,11 @@
     margin-top: 6px;
   }
 
-  @media (min-width:768px) and (max-width:1050px)  {
+  @media (min-width:768px) and (max-width:1100px)  {
     .page-footer{
       width: 100%;
     }
     .page-footer-general__container {
-      width: auto;
       display: flex;
       flex-wrap: wrap;
       padding: 0;
@@ -204,9 +203,7 @@
   @media (max-width:768px) {
     
     .page-footer-general__container {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0;
+      padding: 50px;
     }
     .page-footer__icon {
       text-align: center;
@@ -215,7 +212,6 @@
     .page-footer__container{
       justify-content: center;
       text-align: center;
-      margin-right: 30px;
     }
    
     .page-footer__social-networks-text {
